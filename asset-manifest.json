@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/photographyPortfolio/static/css/main.61d0f9b9.chunk.css",
+    "main.js": "/photographyPortfolio/static/js/main.9d206b59.chunk.js",
+    "main.js.map": "/photographyPortfolio/static/js/main.9d206b59.chunk.js.map",
+    "runtime-main.js": "/photographyPortfolio/static/js/runtime-main.8cce023d.js",
+    "runtime-main.js.map": "/photographyPortfolio/static/js/runtime-main.8cce023d.js.map",
+    "static/js/2.fa1a19a0.chunk.js": "/photographyPortfolio/static/js/2.fa1a19a0.chunk.js",
+    "static/js/2.fa1a19a0.chunk.js.map": "/photographyPortfolio/static/js/2.fa1a19a0.chunk.js.map",
+    "index.html": "/photographyPortfolio/index.html",
+    "precache-manifest.651d6ac3b0325c15865dac4cce7ae2bc.js": "/photographyPortfolio/precache-manifest.651d6ac3b0325c15865dac4cce7ae2bc.js",
+    "service-worker.js": "/photographyPortfolio/service-worker.js",
+    "static/css/main.61d0f9b9.chunk.css.map": "/photographyPortfolio/static/css/main.61d0f9b9.chunk.css.map",
+    "static/media/BG1.png": "/photographyPortfolio/static/media/BG1.289f16e3.png",
+    "static/media/BG2.png": "/photographyPortfolio/static/media/BG2.58a81b9e.png",
+    "static/media/BG3.png": "/photographyPortfolio/static/media/BG3.9c6ca8f5.png",
+    "static/media/BG4.png": "/photographyPortfolio/static/media/BG4.8c397ce4.png",
+    "static/media/BG5.png": "/photographyPortfolio/static/media/BG5.673ac8da.png",
+    "static/media/BG6.png": "/photographyPortfolio/static/media/BG6.69a80144.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8cce023d.js",
+    "static/js/2.fa1a19a0.chunk.js",
+    "static/css/main.61d0f9b9.chunk.css",
+    "static/js/main.9d206b59.chunk.js"
+  ]
+}
