@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0968d96095164d1e8515c9a25011990d",
+    "revision": "77c39e331eb06f0de8e915c2f0096e4e",
     "url": "/photographyPortfolio/index.html"
   },
   {
-    "revision": "9d305cb33587b2067185",
-    "url": "/photographyPortfolio/static/css/main.581e456c.chunk.css"
+    "revision": "7a4bcc95e421f27ef306",
+    "url": "/photographyPortfolio/static/css/main.7da163a3.chunk.css"
   },
   {
-    "revision": "c3e923a74c4bb2f6c8b1",
-    "url": "/photographyPortfolio/static/js/2.798bf1ba.chunk.js"
+    "revision": "55276ee4ff57c62a5c8c",
+    "url": "/photographyPortfolio/static/js/2.bcb9715e.chunk.js"
   },
   {
-    "revision": "9d305cb33587b2067185",
-    "url": "/photographyPortfolio/static/js/main.46b4b00a.chunk.js"
+    "revision": "7a4bcc95e421f27ef306",
+    "url": "/photographyPortfolio/static/js/main.c35523a3.chunk.js"
   },
   {
     "revision": "53ab17c898c34a983f60",
@@ -58,5 +58,33 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ab11468b0124cadc51464555a5991524",
     "url": "/photographyPortfolio/static/media/BG9.ab11468b.jpg"
+  },
+  {
+    "revision": "1a057e8313021a5e4662078b6ed2d301",
+    "url": "/photographyPortfolio/static/media/KIT1.1a057e83.jpg"
+  },
+  {
+    "revision": "1a057e8313021a5e4662078b6ed2d301",
+    "url": "/photographyPortfolio/static/media/KIT2.1a057e83.jpg"
+  },
+  {
+    "revision": "1a057e8313021a5e4662078b6ed2d301",
+    "url": "/photographyPortfolio/static/media/KIT3.1a057e83.jpg"
+  },
+  {
+    "revision": "1a057e8313021a5e4662078b6ed2d301",
+    "url": "/photographyPortfolio/static/media/KIT4.1a057e83.jpg"
+  },
+  {
+    "revision": "1a057e8313021a5e4662078b6ed2d301",
+    "url": "/photographyPortfolio/static/media/KIT5.1a057e83.jpg"
+  },
+  {
+    "revision": "1a057e8313021a5e4662078b6ed2d301",
+    "url": "/photographyPortfolio/static/media/KIT7.1a057e83.jpg"
+  },
+  {
+    "revision": "1a057e8313021a5e4662078b6ed2d301",
+    "url": "/photographyPortfolio/static/media/KIT8.1a057e83.jpg"
   }
 ]);
