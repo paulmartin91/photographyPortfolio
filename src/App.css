@@ -32,28 +32,84 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: white;
 }
 
 .menuItems{
   height: 300px;
-  width: 100%;
+  width: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   font-family: 'Playfair Display', serif;
+  cursor: default;
+  transition: 1s;
+}
+
+.menuHover{
+  transition: 0.5s;
+}
+
+.menuHover:hover{
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.unselected{
+  opacity: 0.3;
+}
+
+.albumsBox{
+  height: 90%;
+  width: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: 0.7s;
+  overflow: hidden;
+}
+
+.albums{
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-family: 'Playfair Display', serif;
+  cursor: default;
+  border-left: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .photosMainBox{
-  height: 90%;
+  height: 95%;
   background-color: white;
   display:flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  align-items: center;
   overflow: scroll;
+  transition: 0.7s;
 }
 
 .photoMain{
+  height: 95%;
   margin: 0px 10px 0px 10px;
-  height: 100%;
+  transition: 0.3s;
+}
+
+.kitBox{
+  height: 90%;
+  width: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: 0.7s;
+  overflow: scroll;
+}
+
+.kitPics{
+  width: 250px;
+  margin: 10px;
 }
