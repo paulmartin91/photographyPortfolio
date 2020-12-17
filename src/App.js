@@ -64,7 +64,7 @@ class App extends React.Component{
       <section>
         <div className="app">
           <div className = "mainMenu">
-          <div className="logo">LOGO</div>
+          <div className="logo">PM PHOTOGRAPHY</div>
             <div className="menuItems">
               <a
                 name = "album"
