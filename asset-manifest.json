@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/photographyPortfolio/static/css/main.7da163a3.chunk.css",
-    "main.js": "/photographyPortfolio/static/js/main.c35523a3.chunk.js",
-    "main.js.map": "/photographyPortfolio/static/js/main.c35523a3.chunk.js.map",
+    "main.css": "/photographyPortfolio/static/css/main.84a5c083.chunk.css",
+    "main.js": "/photographyPortfolio/static/js/main.1d6fa0c6.chunk.js",
+    "main.js.map": "/photographyPortfolio/static/js/main.1d6fa0c6.chunk.js.map",
     "runtime-main.js": "/photographyPortfolio/static/js/runtime-main.8cce023d.js",
     "runtime-main.js.map": "/photographyPortfolio/static/js/runtime-main.8cce023d.js.map",
-    "static/js/2.bcb9715e.chunk.js": "/photographyPortfolio/static/js/2.bcb9715e.chunk.js",
-    "static/js/2.bcb9715e.chunk.js.map": "/photographyPortfolio/static/js/2.bcb9715e.chunk.js.map",
+    "static/js/2.75739e74.chunk.js": "/photographyPortfolio/static/js/2.75739e74.chunk.js",
+    "static/js/2.75739e74.chunk.js.map": "/photographyPortfolio/static/js/2.75739e74.chunk.js.map",
     "index.html": "/photographyPortfolio/index.html",
-    "precache-manifest.f6de976c52a6189af69ce89917e2fe23.js": "/photographyPortfolio/precache-manifest.f6de976c52a6189af69ce89917e2fe23.js",
+    "precache-manifest.0a4dbb4212cb71510d3772976980d28c.js": "/photographyPortfolio/precache-manifest.0a4dbb4212cb71510d3772976980d28c.js",
     "service-worker.js": "/photographyPortfolio/service-worker.js",
-    "static/css/main.7da163a3.chunk.css.map": "/photographyPortfolio/static/css/main.7da163a3.chunk.css.map",
+    "static/css/main.84a5c083.chunk.css.map": "/photographyPortfolio/static/css/main.84a5c083.chunk.css.map",
     "static/media/BG1.jpg": "/photographyPortfolio/static/media/BG1.2c8cdfbc.jpg",
     "static/media/BG10.jpg": "/photographyPortfolio/static/media/BG10.fa2b3467.jpg",
     "static/media/BG2.jpg": "/photographyPortfolio/static/media/BG2.eb29f65c.jpg",
@@ -27,12 +27,13 @@
     "static/media/KIT4.jpg": "/photographyPortfolio/static/media/KIT4.1a057e83.jpg",
     "static/media/KIT5.jpg": "/photographyPortfolio/static/media/KIT5.1a057e83.jpg",
     "static/media/KIT7.jpg": "/photographyPortfolio/static/media/KIT7.1a057e83.jpg",
-    "static/media/KIT8.jpg": "/photographyPortfolio/static/media/KIT8.1a057e83.jpg"
+    "static/media/KIT8.jpg": "/photographyPortfolio/static/media/KIT8.1a057e83.jpg",
+    "static/media/logo.png": "/photographyPortfolio/static/media/logo.85a2a146.png"
   },
   "entrypoints": [
     "static/js/runtime-main.8cce023d.js",
-    "static/js/2.bcb9715e.chunk.js",
-    "static/css/main.7da163a3.chunk.css",
-    "static/js/main.c35523a3.chunk.js"
+    "static/js/2.75739e74.chunk.js",
+    "static/css/main.84a5c083.chunk.css",
+    "static/js/main.1d6fa0c6.chunk.js"
   ]
 }
