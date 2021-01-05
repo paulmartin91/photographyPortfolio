@@ -13,7 +13,7 @@ const AlbumMenu = (props) => {
       ]
 
     return (
-        <div 
+      <div 
         className="albumsBox"
         style = {(props.albumOpen) ? {minWidth: "200px"} : {minWidth: "0"}}
       >
@@ -22,11 +22,11 @@ const AlbumMenu = (props) => {
         style = {(props.albumOpen) ? {minWidth: "200px"} : {minWidth: "0"}}
         >
           {(props.albumOpen) && albums.map((x, y)=>
-             <FadeIn delay={y*200}>
-               <a className="menuItem menuHover" name ="albumFilter" onClick={props.handleClick}>
+            <FadeIn delay={y*200}>
+              <a className="menuItem menuHover" name ="albumFilter" onClick={props.handleClick}>
                 {x}
-               </a>
-              </FadeIn>)
+              </a>
+            </FadeIn>)
             }
         </div>
        </div>

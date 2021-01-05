@@ -1,6 +1,8 @@
 import React from 'react';
 import Photos from './Photos'
 import AlbumMenu from './AlbumMenu'
+import Logo from "./PhotosMain/logo.png"
+
 import './App.css';
 
 class App extends React.Component{
@@ -10,6 +12,8 @@ class App extends React.Component{
       albumOpen: false,
       albumFilter: "All",
       kitShow: false,
+      aboutShow: false,
+      contactShow: false,
     }
   }
 
@@ -17,7 +21,9 @@ class App extends React.Component{
     if (event.target.name == "album") {
       this.setState(prevState => ({
         albumOpen: !prevState.albumOpen,
-        kitShow: false
+        aboutShow: false,
+        kitShow: false,
+        contactShow: false
     }));
     }
 
@@ -25,7 +31,27 @@ class App extends React.Component{
         // document.getElementsByClassName("photoMain")[0].src = KIT
         this.setState(prevState => ({
           kitShow: !prevState.kitShow,
-          albumOpen: false
+          aboutShow: false,
+          albumOpen: false,
+          contactShow: false
+      }))
+    }
+
+    if (event.target.name == "About") {
+      this.setState(prevState => ({
+        aboutShow: !prevState.aboutShow,
+        kitShow: false,
+        albumOpen: false,
+        contactShow: false
+      }))
+    }
+
+    if (event.target.name == "Contact") {
+      this.setState(prevState => ({
+        contactShow: !prevState.contactShow,
+        kitShow: false,
+        albumOpen: false,
+        aboutShow: false
       }))
     }
 
@@ -64,7 +90,9 @@ class App extends React.Component{
       <section>
         <div className="app">
           <div className = "mainMenu">
-          <div className="logo">PM PHOTOGRAPHY</div>
+          <div className="logo">
+            <img src={Logo} width= "200"></img>
+          </div>
             <div className="menuItems">
               <a
                 name = "album"
@@ -84,21 +112,24 @@ class App extends React.Component{
               <a
                 name = "About"
                 className="menuItem menuHover"
-                // className={(this.state.albumOpen) ? "unselected" : "menuHover"} 
+                onClick={this.handleClick}
+                className={(this.state.aboutShow) ? "unselected" : "menuHover"} 
                 >
                   About
               </a>
               <a
                 name = "Contact"
                 className="menuItem menuHover"
-                // className={(this.state.albumOpen) ? "unselected" : "menuHover"} 
+                onClick={this.handleClick}
+                // onClick={() => console.log("yes")}
+                className={(this.state.contactShow) ? "unselected" : "menuHover"} 
                 >
                   Contact
               </a>
             </div>
           </div>
               <AlbumMenu albumOpen={this.state.albumOpen} handleClick={this.handleClick}/>
-              <Photos albumOpen = {this.state.albumOpen} albumFilter={this.state.albumFilter} kitShow={this.state.kitShow}/>
+              <Photos albumOpen = {this.state.albumOpen} albumFilter={this.state.albumFilter} kitShow={this.state.kitShow} aboutShow={this.state.aboutShow} contactShow={this.state.contactShow}/>
         </div>
       </section>
     )
