@@ -12,6 +12,8 @@ import BG9 from './PhotosMain/BG9.jpg'
 import BG10 from './PhotosMain/BG10.jpg'
 
 import KitPannel from './KitPannel'
+import About from './About'
+import Contact from './Contact'
 
 const Photos = (props) => {
 
@@ -33,9 +35,11 @@ const Photos = (props) => {
         //         )}
         // </ section>
         <div className="photosMainBox" id='photoMainBox'>
-        <KitPannel albumOpen = {props.albumOpen} kitShow={props.kitShow} />
- {photos[props.albumFilter].map((x, y)=>
-            <img src={x} class = "photoMain"/>
+            <KitPannel albumOpen = {props.albumOpen} kitShow={props.kitShow} />
+            <About albumOpen = {props.albumOpen} aboutShow={props.aboutShow} />
+            <Contact albumOpen = {props.albumOpen} contactShow={props.contactShow} />
+            {photos[props.albumFilter].map((x, y)=>
+                <img src={x} class = "photoMain"/>
             )}
         </div>
         

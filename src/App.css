@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Yeseva+One&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display|Yeseva+One&display=swap");
 
-.app{
+.app {
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -13,10 +13,10 @@
 
 /* Logo */
 
-.logo{
+.logo {
   width: 200px;
   height: 200px;
-  font-family: 'Yeseva One', cursive;
+  font-family: "Yeseva One", cursive;
   font-size: 2em;
   color: black;
   display: flex;
@@ -26,7 +26,7 @@
 
 /* Main Menu  */
 
-.mainMenu{
+.mainMenu {
   height: 90%;
   min-width: 200px;
   display: flex;
@@ -35,32 +35,32 @@
   background-color: white;
 }
 
-.menuItems{
+.menuItems {
   height: 300px;
   width: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   cursor: default;
   transition: 1s;
 }
 
-.menuHover{
+.menuHover {
   transition: 0.5s;
 }
 
-.menuHover:hover{
+.menuHover:hover {
   opacity: 0.5;
   transition: 0.5s;
 }
 
-.unselected{
+.unselected {
   opacity: 0.3;
 }
 
-.albumsBox{
+.albumsBox {
   height: 90%;
   width: 0px;
   display: flex;
@@ -70,21 +70,21 @@
   overflow: hidden;
 }
 
-.albums{
+.albums {
   height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   cursor: default;
   border-left: 1px solid rgba(0, 0, 0, 0.3);
 }
 
-.photosMainBox{
+.photosMainBox {
   height: 95%;
   background-color: white;
-  display:flex;
+  display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
@@ -92,13 +92,13 @@
   transition: 0.7s;
 }
 
-.photoMain{
+.photoMain {
   height: 95%;
   margin: 0px 10px 0px 10px;
   transition: 0.3s;
 }
 
-.kitBox{
+.kitBox {
   height: 90%;
   width: 0px;
   display: flex;
@@ -109,7 +109,29 @@
   overflow: scroll;
 }
 
-.kitPics{
+.aboutBox {
+  height: 90%;
+  width: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: 0.7s;
+  overflow: scroll;
+}
+
+.contactBox {
+  height: 90%;
+  width: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: 0.7s;
+  overflow: scroll;
+}
+
+.kitPics {
   width: 250px;
   margin: 10px;
 }

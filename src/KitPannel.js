@@ -23,12 +23,12 @@ const KitPannel = (props) => {
         className="kitBox"
         style = {(props.kitShow && !props.albumOpen) ? {minWidth: "610px"} : {minWidth: "0"}}
         >
-        {(props.kitShow) && kit.map((x, y)=>
-             <FadeIn delay={(y==0) ? 500 : 500+y*200}>
+            {(props.kitShow) && kit.map((x, y)=>
+                <FadeIn delay={(y==0) ? 500 : 500+y*200}>
                     <img className="kitPics" src={x} />
-              </FadeIn>)
-            }
-       </div>
+                </FadeIn>
+            )}
+        </div>
     )
 }
 
