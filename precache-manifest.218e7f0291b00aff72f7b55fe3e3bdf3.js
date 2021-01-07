@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "421874703c74b757f993741b33b6d7bf",
+    "revision": "e142db4b3d69d60e1b408a7caa40759f",
     "url": "/photographyPortfolio/index.html"
   },
   {
-    "revision": "6b471c5c7c1ebd6ab1f5",
-    "url": "/photographyPortfolio/static/css/main.84a5c083.chunk.css"
+    "revision": "051618cfecc132b9360c",
+    "url": "/photographyPortfolio/static/css/main.4d2e85f9.chunk.css"
   },
   {
-    "revision": "7fecbb669176d9c33a1e",
-    "url": "/photographyPortfolio/static/js/2.75739e74.chunk.js"
+    "revision": "a98e33954c51442b3f8c",
+    "url": "/photographyPortfolio/static/js/2.6edce122.chunk.js"
   },
   {
-    "revision": "6b471c5c7c1ebd6ab1f5",
-    "url": "/photographyPortfolio/static/js/main.1d6fa0c6.chunk.js"
+    "revision": "051618cfecc132b9360c",
+    "url": "/photographyPortfolio/static/js/main.3bab2fd7.chunk.js"
   },
   {
     "revision": "53ab17c898c34a983f60",
@@ -60,6 +60,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/photographyPortfolio/static/media/BG9.ab11468b.jpg"
   },
   {
+    "revision": "438c93c081b9186539c398ef078a37c6",
+    "url": "/photographyPortfolio/static/media/Github.438c93c0.png"
+  },
+  {
     "revision": "1a057e8313021a5e4662078b6ed2d301",
     "url": "/photographyPortfolio/static/media/KIT1.1a057e83.jpg"
   },
@@ -90,5 +94,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "85a2a146193feb9c0da0fd3b9d4873c9",
     "url": "/photographyPortfolio/static/media/logo.85a2a146.png"
+  },
+  {
+    "revision": "8f8d1a72ee0481f9b840c13e8e1f6da4",
+    "url": "/photographyPortfolio/static/media/me.8f8d1a72.jpg"
   }
 ]);
