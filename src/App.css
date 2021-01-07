@@ -129,9 +129,40 @@
   justify-content: center;
   transition: 0.7s;
   overflow: scroll;
+  font-family: "Playfair Display", serif;
+  align-items: flex-end;
+  padding-bottom: 100px;
 }
 
 .kitPics {
   width: 250px;
   margin: 10px;
+}
+
+/* Contact */
+
+.socialImages {
+  height: 50px;
+  width: auto;
+  margin: 20px;
+}
+
+.contactHolder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: solid black;
+  border-radius: 10px;
+}
+
+.contactHolder a {
+  text-decoration: none;
+  color: black;
+}
+
+.socialAll {
+  min-width: 100%;
+  display: flex;
+  flex-direction: row;
 }
