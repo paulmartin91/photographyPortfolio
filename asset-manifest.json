@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/photographyPortfolio/static/css/main.4d2e85f9.chunk.css",
-    "main.js": "/photographyPortfolio/static/js/main.3bab2fd7.chunk.js",
-    "main.js.map": "/photographyPortfolio/static/js/main.3bab2fd7.chunk.js.map",
+    "main.js": "/photographyPortfolio/static/js/main.b8aeed5b.chunk.js",
+    "main.js.map": "/photographyPortfolio/static/js/main.b8aeed5b.chunk.js.map",
     "runtime-main.js": "/photographyPortfolio/static/js/runtime-main.8cce023d.js",
     "runtime-main.js.map": "/photographyPortfolio/static/js/runtime-main.8cce023d.js.map",
-    "static/js/2.6edce122.chunk.js": "/photographyPortfolio/static/js/2.6edce122.chunk.js",
-    "static/js/2.6edce122.chunk.js.map": "/photographyPortfolio/static/js/2.6edce122.chunk.js.map",
+    "static/js/2.7d97d8db.chunk.js": "/photographyPortfolio/static/js/2.7d97d8db.chunk.js",
+    "static/js/2.7d97d8db.chunk.js.map": "/photographyPortfolio/static/js/2.7d97d8db.chunk.js.map",
     "index.html": "/photographyPortfolio/index.html",
-    "precache-manifest.218e7f0291b00aff72f7b55fe3e3bdf3.js": "/photographyPortfolio/precache-manifest.218e7f0291b00aff72f7b55fe3e3bdf3.js",
+    "precache-manifest.a601a6048d9a5c644c9696556e12c545.js": "/photographyPortfolio/precache-manifest.a601a6048d9a5c644c9696556e12c545.js",
     "service-worker.js": "/photographyPortfolio/service-worker.js",
     "static/css/main.4d2e85f9.chunk.css.map": "/photographyPortfolio/static/css/main.4d2e85f9.chunk.css.map",
     "static/media/BG1.jpg": "/photographyPortfolio/static/media/BG1.2c8cdfbc.jpg",
@@ -34,8 +34,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.8cce023d.js",
-    "static/js/2.6edce122.chunk.js",
+    "static/js/2.7d97d8db.chunk.js",
     "static/css/main.4d2e85f9.chunk.css",
-    "static/js/main.3bab2fd7.chunk.js"
+    "static/js/main.b8aeed5b.chunk.js"
   ]
 }
