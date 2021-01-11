@@ -2,21 +2,21 @@ import React from 'react';
 import FadeIn from 'react-fade-in';
 
 
-import './App.css';
+import '../Styles/App.css';
 
 //logos
-import FCC from './PhotosMain/FCC.png'
-import Github from './PhotosMain/Github.png'
-import CodeWars from './PhotosMain/CodeWars.png'
-import LinkedIn from './PhotosMain/LinkedIn.png'
+import FCC from '../PhotosMain/FCC.png'
+import Github from '../PhotosMain/Github.png'
+import CodeWars from '../PhotosMain/CodeWars.png'
+import LinkedIn from '../PhotosMain/LinkedIn.png'
 
-const Contact = (props) => {
+const Contact = ({ albumOpen, contactShow }) => {
     return (
         <div 
         className="contactBox"
-        style = {(props.contactShow && !props.albumOpen) ? {minWidth: "510px"} : {minWidth: "0"}}
+        style = {(contactShow && !albumOpen) ? {minWidth: "510px"} : {minWidth: "0"}}
         >
-            {(props.contactShow) && 
+            {(contactShow) && 
             <FadeIn delay={350}>
                 <section className='contactHolder'>
                     <p>Say Hi <span role="img">👋</span></p>

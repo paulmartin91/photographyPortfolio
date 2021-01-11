@@ -1,11 +1,11 @@
 import React from 'react';
 import FadeIn from 'react-fade-in';
 
-import Me from "./PhotosMain/me.jpg"
+import Me from "../PhotosMain/me.jpg"
 
-import './App.css';
+import '../Styles/App.css';
 
-const About = (props) => {
+const About = ({ aboutShow, albumOpen }) => {
     const containerStyle = {
         maxWidth: 300,
         display: "flex",
@@ -16,10 +16,10 @@ const About = (props) => {
     }
     return (
         <div 
-        className="aboutBox"
-        style = {(props.aboutShow && !props.albumOpen) ? {minWidth: "400px"} : {minWidth: "0"}}
+            className="aboutBox"
+            style = {(aboutShow && !albumOpen) ? {minWidth: "400px"} : {minWidth: "0"}}
         >
-            {(props.aboutShow) &&
+            {(aboutShow) &&
                 <div style={containerStyle}>
                 <FadeIn delay={300}>
                     <h1 >About me</h1> 
