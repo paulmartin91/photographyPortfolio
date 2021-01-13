@@ -20,8 +20,8 @@ const KitPannel = ({ albumOpen, kitShow }) => {
 
     return (
         <div 
-        className="kitBox"
-        style = {(kitShow && !albumOpen) ? {minWidth: "610px"} : {minWidth: "0"}}
+            className="kitBox"
+            style = {(kitShow && !albumOpen) ? {minWidth: "610px"} : {minWidth: "0"}}
         >
             {(kitShow) && kit.map((x, y)=>
                 <FadeIn delay={(y==0) ? 500 : 500+y*200}>

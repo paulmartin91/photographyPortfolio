@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
+import { Col, Container, Row, Collapse, Navbar, Nav, Button } from 'react-bootstrap'
+
 import Photos from './Components/Photos'
 import AlbumMenu from './Components/AlbumMenu'
-import Logo from "./PhotosMain/logo.png"
+import Menu from './Components/Menu'
 
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './Styles/App.css';
 
 const App = () => {
@@ -47,7 +50,7 @@ const App = () => {
 
       if (albumFilter != event.target.innerHTML) {
         let x = document.getElementsByClassName('photoMain')
-        
+
         //fade existing photos
         for (let i = 0; i<x.length; i++) {
           x[i].style.opacity = 0;
@@ -69,50 +72,10 @@ const App = () => {
   }
 
     return(
-      <section>
-        <div className="app">
-          <div className = "mainMenu">
-          <div className="logo">
-            <img src={Logo} width= "200"></img>
-          </div>
-            <div className="menuItems">
-              <a
-                name = "album"
-                className="menuItem"
-                className={(albumOpen) ? "unselected" : "menuHover"}
-                onClick={handleClick}>
-                  Albums
-              </a>
-              <a
-                name = "Kit"
-                className="menuItem"
-                className={(kitShow) ? "unselected" : "menuHover"}
-                onClick={handleClick}
-                >
-                  Kit
-              </a>
-              <a
-                name = "About"
-                className="menuItem menuHover"
-                onClick={handleClick}
-                className={(aboutShow) ? "unselected" : "menuHover"} 
-                >
-                  About
-              </a>
-              <a
-                name = "Contact"
-                className="menuItem menuHover"
-                onClick={handleClick}
-                // onClick={() => console.log("yes")}
-                className={(contactShow) ? "unselected" : "menuHover"} 
-                >
-                  Contact
-              </a>
-            </div>
-          </div>
-              <AlbumMenu albumOpen={albumOpen} handleClick={handleClick}/>
-              <Photos albumOpen = {albumOpen} albumFilter={albumFilter} kitShow={kitShow} aboutShow={aboutShow} contactShow={contactShow}/>
-        </div>
+      <section className="app" >
+        <Menu handleClick={handleClick} albumOpen = {albumOpen} albumFilter={albumFilter} kitShow={kitShow} aboutShow={aboutShow} contactShow={contactShow}/>
+        <AlbumMenu className = "d-none d-md-flex" albumOpen={albumOpen} handleClick={handleClick}/>
+        <Photos albumOpen = {albumOpen} albumFilter={albumFilter} kitShow={kitShow} aboutShow={aboutShow} contactShow={contactShow}/>
       </section>
     )
   } 

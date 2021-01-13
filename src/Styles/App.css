@@ -28,7 +28,6 @@
 
 .mainMenu {
   height: 90%;
-  min-width: 200px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -36,7 +35,7 @@
 }
 
 .menuItems {
-  height: 300px;
+  max-height: 300px;
   width: 200px;
   display: flex;
   flex-direction: column;
@@ -45,6 +44,7 @@
   font-family: "Playfair Display", serif;
   cursor: default;
   transition: 1s;
+  color: black;
 }
 
 .menuHover {
@@ -55,12 +55,11 @@
   opacity: 0.5;
   transition: 0.5s;
 }
-
-.unselected {
+*/ .unselected {
   opacity: 0.3;
 }
 
-.albumsBox {
+/* .albumsBox {
   height: 90%;
   width: 0px;
   display: flex;
@@ -68,9 +67,9 @@
   justify-content: flex-end;
   transition: 0.7s;
   overflow: hidden;
-}
+} */
 
-.albums {
+/* .albums {
   height: 300px;
   display: flex;
   flex-direction: column;
@@ -79,7 +78,7 @@
   font-family: "Playfair Display", serif;
   cursor: default;
   border-left: 1px solid rgba(0, 0, 0, 0.3);
-}
+} */
 
 .photosMainBox {
   height: 95%;
@@ -88,7 +87,8 @@
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
-  overflow: scroll;
+  overflow-x: scroll;
+  overflow-y: hidden;
   transition: 0.7s;
 }
 

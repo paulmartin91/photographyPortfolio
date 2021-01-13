@@ -1,0 +1,53 @@
+.albumsBox {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: 0.7s;
+}
+
+.albums {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  font-family: "Playfair Display", serif;
+  cursor: default;
+}
+
+.albumTabs {
+  max-height: 300px;
+  font-family: "Playfair Display", serif;
+  cursor: default;
+  border-left: solid lightgray 1px;
+}
+
+/* .menuItems {
+  height: 300px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Playfair Display", serif;
+  cursor: default;
+  transition: 1s;
+} */
+
+.menuItems a {
+  color: black;
+  text-decoration: none;
+}
+
+.menuItems a {
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.menuItems a:hover {
+  opacity: 0.5;
+  transition: 0.5s;
+  color: black;
+  text-decoration: none;
+}
