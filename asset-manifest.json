@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/photographyPortfolio/static/css/main.4d2e85f9.chunk.css",
-    "main.js": "/photographyPortfolio/static/js/main.b8aeed5b.chunk.js",
-    "main.js.map": "/photographyPortfolio/static/js/main.b8aeed5b.chunk.js.map",
+    "main.css": "/photographyPortfolio/static/css/main.9a3cf5e7.chunk.css",
+    "main.js": "/photographyPortfolio/static/js/main.06537fa9.chunk.js",
+    "main.js.map": "/photographyPortfolio/static/js/main.06537fa9.chunk.js.map",
     "runtime-main.js": "/photographyPortfolio/static/js/runtime-main.8cce023d.js",
     "runtime-main.js.map": "/photographyPortfolio/static/js/runtime-main.8cce023d.js.map",
-    "static/js/2.7d97d8db.chunk.js": "/photographyPortfolio/static/js/2.7d97d8db.chunk.js",
-    "static/js/2.7d97d8db.chunk.js.map": "/photographyPortfolio/static/js/2.7d97d8db.chunk.js.map",
+    "static/css/2.ae27b44a.chunk.css": "/photographyPortfolio/static/css/2.ae27b44a.chunk.css",
+    "static/js/2.e15b9962.chunk.js": "/photographyPortfolio/static/js/2.e15b9962.chunk.js",
+    "static/js/2.e15b9962.chunk.js.map": "/photographyPortfolio/static/js/2.e15b9962.chunk.js.map",
     "index.html": "/photographyPortfolio/index.html",
-    "precache-manifest.a601a6048d9a5c644c9696556e12c545.js": "/photographyPortfolio/precache-manifest.a601a6048d9a5c644c9696556e12c545.js",
+    "precache-manifest.8915526c923ce426cd525a246d2ed805.js": "/photographyPortfolio/precache-manifest.8915526c923ce426cd525a246d2ed805.js",
     "service-worker.js": "/photographyPortfolio/service-worker.js",
-    "static/css/main.4d2e85f9.chunk.css.map": "/photographyPortfolio/static/css/main.4d2e85f9.chunk.css.map",
+    "static/css/2.ae27b44a.chunk.css.map": "/photographyPortfolio/static/css/2.ae27b44a.chunk.css.map",
+    "static/css/main.9a3cf5e7.chunk.css.map": "/photographyPortfolio/static/css/main.9a3cf5e7.chunk.css.map",
     "static/media/BG1.jpg": "/photographyPortfolio/static/media/BG1.2c8cdfbc.jpg",
     "static/media/BG10.jpg": "/photographyPortfolio/static/media/BG10.fa2b3467.jpg",
     "static/media/BG2.jpg": "/photographyPortfolio/static/media/BG2.eb29f65c.jpg",
@@ -34,8 +36,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.8cce023d.js",
-    "static/js/2.7d97d8db.chunk.js",
-    "static/css/main.4d2e85f9.chunk.css",
-    "static/js/main.b8aeed5b.chunk.js"
+    "static/css/2.ae27b44a.chunk.css",
+    "static/js/2.e15b9962.chunk.js",
+    "static/css/main.9a3cf5e7.chunk.css",
+    "static/js/main.06537fa9.chunk.js"
   ]
 }
