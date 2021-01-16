@@ -7,12 +7,14 @@ import "../Styles/menu.css"
 
 function Menu({ albumOpen, albumFilter, kitShow, aboutShow, contactShow, handleClick }) {
     return (
-        <Container className="menuHolder d-none d-md-flex flex-direction-row">
-            <Col className = "mainMenu d-flex">
-                <Row className="logo d-flex flex-column justify-content-start">
-                    <img src={Logo} width= "200"></img>
-                </Row>
-                <Row className="menuItems d-flex flex-column justify-content-between">
+        // <Container className="menuHolder d-none d-md-flex flex-direction-row">
+        <Container fluid className="d-flex flex-column flex-md-row p-0 mt-2">
+            <Col className = "mainMenu d-flex flex-row flex-md-column align-items-center justify-content-start justify-content-md-between">
+            {/* <Col className = "d-flex "> */}
+                {/* <Row className="logoContainer d-flex flex-column justify-content-start"> */}
+                    <img src={Logo} className="logo"></img>
+                {/* </Row> */}
+                <Row className="col-8 menuItems ml-2 d-flex flex-row flex-md-column justify-content-between">
                     <a
                         name = "album"
                         className="menuItem"

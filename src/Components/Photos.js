@@ -29,12 +29,12 @@ const Photos = ({ albumOpen, kitShow, aboutShow, contactShow, albumFilter }) => 
       }
 
     return (
-        <div className="photosMainBox" id='photoMainBox'>
+        <div className="photosMainBox" id='photoMainBox' >
             <KitPannel albumOpen = {albumOpen} kitShow={kitShow} />
             <About albumOpen = {albumOpen} aboutShow={aboutShow} />
             <Contact albumOpen = {albumOpen} contactShow={contactShow} />
             <Col 
-                className="photoMain d-flex flex-xl-row flex-column"
+                className="photoMain pl-0 pl-md-2 d-flex flex-xl-row flex-column"
             >
                 {photos[albumFilter].map(x =>
                     <Image className="px-xl-2 py-2" fluid src={x} />

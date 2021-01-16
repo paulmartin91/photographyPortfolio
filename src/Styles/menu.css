@@ -3,16 +3,25 @@
 }
 
 .mainMenu {
-  height: 90vh;
-  min-width: 180px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   background-color: white;
 }
 
+/* Logo */
+
+.logo {
+  width: 125px;
+}
+
+.logoContainer {
+  font-family: "Yeseva One", cursive;
+  font-size: 2em;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .menuItems {
-  height: 300px;
   min-width: 200px;
   display: flex;
   flex-direction: column;
@@ -30,6 +39,7 @@
 } */
 
 .menuItem {
+  font-size: small;
   transition: 0.5s;
   color: black;
   text-decoration: none;
@@ -39,4 +49,31 @@
   opacity: 0.5;
   color: black;
   text-decoration: none;
+}
+
+@media (min-width: 0px) {
+  .logo {
+    width: 75px;
+  }
+}
+
+@media (min-width: 576px) {
+  .logo {
+    width: 150px;
+  }
+}
+
+@media (min-width: 768px) {
+  .mainMenu {
+    height: 90vh;
+  }
+  .logo {
+    width: 200px;
+  }
+  .menuItems {
+    max-height: 300px;
+  }
+  .menuItem {
+    /* font-size: 1.5em; */
+  }
 }

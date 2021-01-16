@@ -1,5 +1,4 @@
 .albumsBox {
-  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -14,15 +13,14 @@
 }
 
 .albumMenuItems {
-  height: 300px;
-  width: 200px;
+  /* min-height: 300px; */
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   font-family: "Playfair Display", serif;
   cursor: default;
-  transition: 1s;
 }
 
 .albumMenuItems a {
@@ -35,4 +33,18 @@
   text-decoration: none;
   opacity: 0.5;
   transition: 300ms;
+}
+
+@media (min-width: 768px) {
+  .albumsBox {
+    height: 90vh;
+  }
+  .albumMenuItems {
+    height: 300px;
+    width: 200px;
+  }
+  .albumMenuItems {
+    transition: 0.7s;
+    width: 150;
+  }
 }

@@ -13,8 +13,8 @@ import LinkedIn from '../PhotosMain/LinkedIn.png'
 const Contact = ({ albumOpen, contactShow }) => {
     return (
         <div 
-        className="contactBox"
-        style = {(contactShow && !albumOpen) ? {minWidth: "510px"} : {minWidth: "0"}}
+        className="contactBox d-flex flex-direction-row flex-wrap justify-content-center align-items-start align-items-md-end"
+        style = {(contactShow && !albumOpen) ? {minWidth: '510px'} : {minWidth: "0"}}
         >
             {(contactShow) && 
             <FadeIn delay={350}>

@@ -72,7 +72,7 @@ const App = () => {
   }
 
     return(
-      <section className="app" >
+      <section className="app flex-column flex-md-row d-flex align-items-center justify-content-start" >
         <Menu handleClick={handleClick} albumOpen = {albumOpen} albumFilter={albumFilter} kitShow={kitShow} aboutShow={aboutShow} contactShow={contactShow}/>
         {/* <AlbumMenu className = "d-none d-md-flex" albumOpen={albumOpen} handleClick={handleClick}/> */}
         <Photos albumOpen = {albumOpen} albumFilter={albumFilter} kitShow={kitShow} aboutShow={aboutShow} contactShow={contactShow}/>
