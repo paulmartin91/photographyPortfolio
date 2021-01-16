@@ -1,5 +1,10 @@
+.menuHolder {
+  transition: 1s;
+}
+
 .mainMenu {
-  height: 90%;
+  height: 90vh;
+  min-width: 180px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -7,8 +12,8 @@
 }
 
 .menuItems {
-  max-height: 300px;
-  width: 200px;
+  height: 300px;
+  min-width: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,14 +25,18 @@
   text-decoration: none;
 }
 
-.menuItems {
+/* .menuItems {
   transition: 0.5s;
+} */
+
+.menuItem {
+  transition: 0.5s;
+  color: black;
   text-decoration: none;
 }
 
-.menuItems:hover {
+.menuItem:hover {
   opacity: 0.5;
-  transition: 0.5s;
   color: black;
   text-decoration: none;
 }

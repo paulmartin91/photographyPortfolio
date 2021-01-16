@@ -55,9 +55,6 @@
   opacity: 0.5;
   transition: 0.5s;
 }
-*/ .unselected {
-  opacity: 0.3;
-}
 
 /* .albumsBox {
   height: 90%;
@@ -81,21 +78,28 @@
 } */
 
 .photosMainBox {
-  height: 95%;
+  height: 100%;
   background-color: white;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
-  overflow-x: scroll;
-  overflow-y: hidden;
+  overflow: scroll;
   transition: 0.7s;
 }
 
+@media (min-width: 1200px) {
+  .photosMainBox {
+    height: auto;
+  }
+}
+
 .photoMain {
-  height: 95%;
-  margin: 0px 10px 0px 10px;
+  height: 100%;
+  /* width: 100%; */
+  padding: 0px 10px 0px 10px;
   transition: 0.3s;
+  overflow: scroll;
 }
 
 .kitBox {

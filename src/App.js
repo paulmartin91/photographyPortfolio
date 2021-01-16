@@ -74,7 +74,7 @@ const App = () => {
     return(
       <section className="app" >
         <Menu handleClick={handleClick} albumOpen = {albumOpen} albumFilter={albumFilter} kitShow={kitShow} aboutShow={aboutShow} contactShow={contactShow}/>
-        <AlbumMenu className = "d-none d-md-flex" albumOpen={albumOpen} handleClick={handleClick}/>
+        {/* <AlbumMenu className = "d-none d-md-flex" albumOpen={albumOpen} handleClick={handleClick}/> */}
         <Photos albumOpen = {albumOpen} albumFilter={albumFilter} kitShow={kitShow} aboutShow={aboutShow} contactShow={contactShow}/>
       </section>
     )

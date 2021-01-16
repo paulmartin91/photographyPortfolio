@@ -1,4 +1,5 @@
 import React from 'react';
+import { Col, Image } from 'react-bootstrap'
 
 import BG1 from '../PhotosMain/BG1.jpg'
 import BG2 from '../PhotosMain/BG2.jpg'
@@ -32,9 +33,13 @@ const Photos = ({ albumOpen, kitShow, aboutShow, contactShow, albumFilter }) => 
             <KitPannel albumOpen = {albumOpen} kitShow={kitShow} />
             <About albumOpen = {albumOpen} aboutShow={aboutShow} />
             <Contact albumOpen = {albumOpen} contactShow={contactShow} />
-            {photos[albumFilter].map(x =>
-                <img src={x} class = "photoMain" />
-            )}
+            <Col 
+                className="photoMain d-flex flex-xl-row flex-column"
+            >
+                {photos[albumFilter].map(x =>
+                    <Image className="px-xl-2 py-2" fluid src={x} />
+                )}
+            </Col>
         </div>
     )
 }

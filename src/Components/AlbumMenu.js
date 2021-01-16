@@ -1,10 +1,11 @@
 import React from 'react';
 import FadeIn from 'react-fade-in';
-import { Col, Container } from 'react-bootstrap'
+import { Col, Container, Row } from 'react-bootstrap'
 
 import '../Styles/albumMenu.css';
+import { Collapse } from 'react-bootstrap';
 
-const AlbumMenu = ({ albumOpen, handleClick }) => {
+const AlbumMenu = ({ albumOpen, handleClick, albumFilter }) => {
 
   const albums = [
     "All",
@@ -16,22 +17,30 @@ const AlbumMenu = ({ albumOpen, handleClick }) => {
 
   return (
     <div
+      //className="col-2 d-flex flex-column justify-content-end"
       className="albumsBox"
-      style={(albumOpen) ? { minWidth: "200px" } : { minWidth: "0" }}
+      style={(albumOpen) ? { maxWidth: "200px" } : { maxWidth: "0" }}
     >
-      <Col
-        className="albums"
+      <Row 
+        className="albumMenuItems d-flex flex-column justify-content-between"
       >
-        <Col className="albumTabs d-flex flex-column align-items-center justify-content-between">
+        <Row className="albumMenuItems d-flex flex-column justify-content-between">
           {(albumOpen) && albums.map((x, y) =>
+            
             <FadeIn delay={y * 200}>
-              <a className="menuItems" name="albumFilter" onClick={handleClick}>
+              <a
+                className="menuItem" 
+                style={(albumFilter == x) ? { opacity: 0.5 } : { opacity: 1 }}
+                name="albumFilter" 
+                onClick={handleClick}
+
+              >
                 {x}
               </a>
             </FadeIn>
           )}
-        </Col>
-      </Col>
+        </Row>
+      </Row>
     </div >
   )
 }
