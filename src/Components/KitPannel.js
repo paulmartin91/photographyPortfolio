@@ -12,7 +12,7 @@ import KIT8 from '../PhotosMain/KIT8.jpg'
 
 import '../Styles/App.css';
 
-const KitPannel = ({ albumOpen, kitShow }) => {
+const KitPannel = ({ activeTab }) => {
 
     const kit = [
         KIT1, KIT2, KIT3, KIT4, KIT5, KIT6, KIT7, KIT8
@@ -21,9 +21,9 @@ const KitPannel = ({ albumOpen, kitShow }) => {
     return (
         <div 
             className="kitBox"
-            style = {(kitShow && !albumOpen) ? {minWidth: "610px"} : {minWidth: "0"}}
+            style = {(activeTab == 'Kit') ? {minWidth: "610px"} : {minWidth: "0"}}
         >
-            {(kitShow) && kit.map((x, y)=>
+            {(activeTab == 'Kit') && kit.map((x, y)=>
                 <FadeIn delay={(y==0) ? 500 : 500+y*200}>
                     <img className="kitPics" src={x} />
                 </FadeIn>

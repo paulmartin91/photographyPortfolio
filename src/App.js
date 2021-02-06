@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Col, Container, Row, Collapse, Navbar, Nav, Button } from 'react-bootstrap'
 
 import Photos from './Components/Photos'
@@ -7,75 +7,32 @@ import Menu from './Components/Menu'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Styles/App.css';
+import MainPannel from './Components/MainPannel';
 
 const App = () => {
 
-  const [albumOpen, setAlbumOpen] = useState(false)
-  const [albumFilter, setAlbumFilter] = useState("All")
-  const [kitShow, setKitShow] = useState(false)
-  const [aboutShow, setAboutShow] = useState(false)
-  const [contactShow, setContactShow] = useState(false)
-  
+  const [albumFilter, setAlbumFilter] = useState("England")
+  const [activeTab, setActiveTab] = useState('None')
+  const activePhotos = useRef()
+
   const handleClick = event => {
-    if (event.target.name == "album") {
-      setAlbumOpen(prevState => !prevState)
-      setAboutShow(false)
-      setKitShow(false)
-      setContactShow(false) 
-    }
-
-    if (event.target.name == "Kit") {
-      setAlbumOpen(false)
-      setKitShow(prevState => !prevState)
-      setAboutShow(false)
-      setContactShow(false)
-    }
-
-    if (event.target.name == "About") {
-      setKitShow(false)
-      setAboutShow(prevState => !prevState)
-      setAlbumOpen(false)
-      setContactShow(false)
-    }
-
-    if (event.target.name == "Contact") {
-      setAlbumOpen(false)
-      setKitShow(false)
-      setAboutShow(false)
-      setContactShow(prevState => !prevState)
-    }
-
-    if (event.target.name == "albumFilter") {
-      var nme = event.target.innerHTML
-
-      if (albumFilter != event.target.innerHTML) {
-        let x = document.getElementsByClassName('photoMain')
-
-        //fade existing photos
-        for (let i = 0; i<x.length; i++) {
-          x[i].style.opacity = 0;
-        }
-      
-        setTimeout(()=>{
-          document.getElementById('photoMainBox').scrollLeft = 0
-          setAlbumFilter(nme)
-        }, 300)
-
-        setTimeout(()=>{
-          let x = document.getElementsByClassName('photoMain')
-          for (let i = 0; i<x.length; i++) {
-            x[i].style.opacity = 1;
-          }
-        }, 350, nme)
-      }
-    }
+    let filter = event.target.name
+    activePhotos.current.childNodes.forEach((node, index) => setTimeout(() => node.style.opacity = 0, index*100))
+    
+    setTimeout(() => setAlbumFilter(filter), 500)
+    setTimeout(() => {
+      activePhotos.current.childNodes.forEach(node => node.style.opacity = 1)
+      activePhotos.current.scrollLeft = 0
+    }, 550)
   }
 
     return(
       <section className="app flex-column flex-md-row d-flex align-items-center justify-content-start" >
-        <Menu handleClick={handleClick} albumOpen = {albumOpen} albumFilter={albumFilter} kitShow={kitShow} aboutShow={aboutShow} contactShow={contactShow}/>
-        {/* <AlbumMenu className = "d-none d-md-flex" albumOpen={albumOpen} handleClick={handleClick}/> */}
-        <Photos albumOpen = {albumOpen} albumFilter={albumFilter} kitShow={kitShow} aboutShow={aboutShow} contactShow={contactShow}/>
+
+        <Menu handleClick={handleClick} albumFilter={albumFilter} activeTab={activeTab} setActiveTab={setActiveTab} setAlbumFilter={setAlbumFilter}/>
+        
+        <MainPannel handleClick={handleClick} albumFilter={albumFilter} activeTab={activeTab} activePhotos={activePhotos}/>
+
       </section>
     )
   } 

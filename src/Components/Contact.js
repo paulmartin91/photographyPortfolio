@@ -10,13 +10,13 @@ import Github from '../PhotosMain/Github.png'
 import CodeWars from '../PhotosMain/CodeWars.png'
 import LinkedIn from '../PhotosMain/LinkedIn.png'
 
-const Contact = ({ albumOpen, contactShow }) => {
+const Contact = ({ activeTab }) => {
     return (
         <div 
         className="contactBox d-flex flex-direction-row flex-wrap justify-content-center align-items-start align-items-md-end"
-        style = {(contactShow && !albumOpen) ? {minWidth: '510px'} : {minWidth: "0"}}
+        style = {(activeTab == 'Contact') ? {minWidth: '510px'} : {minWidth: "0"}}
         >
-            {(contactShow) && 
+            {(activeTab == 'Contact') && 
             <FadeIn delay={350}>
                 <section className='contactHolder'>
                     <p>Say Hi <span role="img">👋</span></p>

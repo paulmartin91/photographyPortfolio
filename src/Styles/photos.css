@@ -1,0 +1,26 @@
+.mainPannel {
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  overflow: scroll;
+  transition: 0.7s;
+}
+
+.photoMain {
+  height: 100%;
+  padding: 0px 0px 0px 0px;
+  transition: 0.3s;
+  overflow: scroll;
+}
+
+@media (min-width: 1200px) {
+  .mainPannel {
+    height: auto;
+  }
+  .photoMain {
+    min-width: 1000px;
+  }
+}

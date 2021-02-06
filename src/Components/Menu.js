@@ -5,7 +5,8 @@ import Logo from "../PhotosMain/logo.png"
 import AlbumMenu from './AlbumMenu'
 import "../Styles/menu.css"
 
-function Menu({ albumOpen, albumFilter, kitShow, aboutShow, contactShow, handleClick }) {
+function Menu({ handleClick, albumFilter, activeTab, setActiveTab }) {
+
     return (
         // <Container className="menuHolder d-none d-md-flex flex-direction-row">
         <Container fluid className="d-flex flex-column flex-md-row p-0 mt-2">
@@ -18,39 +19,45 @@ function Menu({ albumOpen, albumFilter, kitShow, aboutShow, contactShow, handleC
                     <a
                         name = "album"
                         className="menuItem"
-                        style={(albumOpen) ? { opacity: 0.5 } : { opacity: 1 }}
-                        onClick={handleClick}
+                        style={(activeTab == 'Album') ? { opacity: 0.5 } : { opacity: 1 }}
+                        onClick={() => activeTab === 'Album' ? setActiveTab('None') : setActiveTab('Album')}
                     >
                         Albums
                     </a>
                     <a
+                        as="P"
                         name = "Kit"
                         className="menuItem"
-                        style={(kitShow) ? { opacity: 0.5 } : { opacity: 1 }}
-                        onClick={handleClick}
+                        style={(activeTab == 'Kit') ? { opacity: 0.5 } : { opacity: 1 }}
+                        onClick={() => activeTab === 'Kit' ? setActiveTab('None') : setActiveTab('Kit')}
                     >
                         Kit
                     </a>
                     <a
+                        variant='light'
                         name = "About"
                         className="menuItem"
-                        onClick={handleClick}
-                        style={(aboutShow) ? { opacity: 0.5 } : { opacity: 1 }}
+                        style={(activeTab == 'About') ? { opacity: 0.5 } : { opacity: 1 }}
+                        onClick={() => activeTab === 'About' ? setActiveTab('None') : setActiveTab('About')}
                     >
                         About
                     </a>
                     <a
                         name = "Contact"
                         className="menuItem"
-                        onClick={handleClick}
-                        // onClick={() => console.log("yes")}
-                        style={(contactShow) ? { opacity: 0.5 } : { opacity: 1 }} 
+                        style={(activeTab == 'Contact') ? { opacity: 0.5 } : { opacity: 1 }} 
+                        onClick={() => activeTab === 'Contact' ? setActiveTab('None') : setActiveTab('Contact')}
                     >
                         Contact
                     </a>
                 </Row >
             </Col>
-            <AlbumMenu className = "d-none d-md-flex" albumOpen={albumOpen} handleClick={handleClick} albumFilter={albumFilter}/>
+            <AlbumMenu 
+                className = "d-none d-md-flex" 
+                activeTab={activeTab} 
+                albumFilter={albumFilter}
+                handleClick={handleClick} 
+            />
         </Container>
     );
 }
