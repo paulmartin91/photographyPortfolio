@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://paulmartin91.github.io/photographyPortfolio/",
   "dependencies": {
-    "gh-pages": "^2.1.1",
+    "gh-pages": "^5.0.0",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-fade-in": "^0.1.6",
